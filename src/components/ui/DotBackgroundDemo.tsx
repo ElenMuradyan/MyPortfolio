@@ -19,14 +19,14 @@ export function DotBackgroundDemo() {
       <div className='flex justify-center relative my-20 z-10'>
           <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
             <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>
-            Hello, I'm Elen — a Frontend Developer.
+            Hello, I'm Elen Muradyan — a Frontend Developer based in Yerevan, Armenia.
             </h2>
             <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl" 
-            words="Transforming consepts into Seamless Experiences"/>
+            words="Currently open to full-time or freelance opportunities"/>
 
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            I craft modern, responsive, and user-friendly web experiences using technologies like React, Next.js, TypeScript and Tailwind CSS. I'm passionate about clean code, great design, and building interfaces that users love.
+            I’m passionate about building clean, responsive web apps using React, TypeScript, and modern tools like Next.js, Firebase, and Tailwind CSS.
             </p>
             <a href="/about">
             <MagicButton 

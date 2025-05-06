@@ -7,104 +7,137 @@ export const navbarItems = [
 ];
   
 export const gridItems = [
-    {
-        id: 1,
-        title: "I prioritize client collaboration, fostering open communication ",
-        description: "",
-        className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-        imgClassName: "w-full h-full",
-        titleClassName: "justify-end",
-        img: "/b1.svg",
-        spareImg: "",
-      },
-      {
-        id: 2,
-        title: "I'm very flexible with time zone communications",
-        description: "",
-        className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-        imgClassName: "",
-        titleClassName: "justify-start",
-        img: "",
-        spareImg: "",
-      },
-      {
-        id: 3,
-        title: "My tech stack",
-        description: "I constantly try to improve",
-        className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-        imgClassName: "",
-        titleClassName: "justify-center",
-        img: "",
-        spareImg: "",
-      },
-      {
-        id: 4,
-        title: "Tech enthusiast with a passion for development.",
-        description: "",
-        className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-        imgClassName: "",
-        titleClassName: "justify-start",
-        img: "/grid.svg",
-        spareImg: "/b4.svg",
-      },
-    
-      {
-        id: 5,
-        title: "Currently building a JS Animation library",
-        description: "The Inside Scoop",
-        className: "md:col-span-3 md:row-span-2",
-        imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-        titleClassName: "justify-center md:justify-start lg:justify-center",
-        img: "/b5.svg",
-        spareImg: "/grid.svg",
-      },
-      {
-        id: 6,
-        title: "Do you want to start a project together?",
-        description: "",
-        className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-        imgClassName: "",
-        titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-        img: "",
-        spareImg: "",
-      },
-    ];    
-  
-  export const projects = [
-    {
-      id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
-    },
-    {
-      id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
-    },
-    {
-      id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
-    },
-    {
-      id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
-    },
-  ];
-  
+  {
+    id: 1,
+    title:
+      "I started learning JavaScript on my own in my hometown. A year later, I joined Armenian Code Academy and became one of the top students in the Advanced JS and React courses (April–December 2024).",
+    description: "",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    imgClassName: "w-full h-full",
+    titleClassName: "justify-center",
+    img: "/Images/b1.jpg",
+    spareImg: "",
+  },
+  {
+    id: 2,
+    title:
+      "Coding is more than just a skill to me — it’s my passion and favorite hobby.",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 3,
+    title:
+      "I’ve been building projects and deepening my knowledge in TypeScript and Next.js ever since.",
+    description: "Always learning and improving.",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    imgClassName: "",
+    titleClassName: "justify-center",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 4,
+    title:
+      "Soon I'll start studying Information Security at Yerevan State University (Applied Informatics & Mathematics).",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    imgClassName: "",
+    titleClassName: "justify-start items-end",
+    img: "/Images/grid.svg",
+    spareImg: "/Images/b4.png",
+  },
+  {
+    id: 5,
+    title:
+      "I’m currently seeking a remote role — freelance, internship, or anything meaningful where I can grow.",
+    className: "md:col-span-3 md:row-span-2",
+    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+    titleClassName: "justify-center md:justify-start lg:justify-center",
+    img: "/Images/b5.svg",
+    spareImg: "/Images/grid.svg",
+  },
+  {
+    id: 6,
+    title: "Want to start a project together?",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    imgClassName: "",
+    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    img: "",
+    spareImg: "",
+  },
+];
+export const projects = [
+  {
+    id: 1,
+    title: "AI Chatbot Assistant",
+    des: "A smart AI chatbot built with Next.js and OpenAI API, designed to provide interactive responses and integrate with modern web apps.",
+    img: "/Projects/chatbot.png",
+    iconLists: ["/Icons/nextdotjs.svg", "/Icons/typescript.svg", "/Icons/openai.svg", "/Icons/redux.svg", "/Icons/cookiecutter.svg", "/Icons/supabase.svg", "/Icons/firebase.svg"],
+    link: "z-chatbot.netlify.app",
+    gitLink: 'https://github.com/ElenMuradyan/chatBot'
+
+  },  
+  {
+    id: 2,
+    title: "Jira Clone",
+    des: "A simplified Jira board clone for task and project management, with drag-and-drop support and Redux integration.",
+    img: "/Projects/jira.png",
+    iconLists: ["/Icons/nextdotjs.svg", "/Icons/typescript.svg", "/Icons/redux.svg", "/Icons/cookiecutter.svg", "/Icons/antdesign.svg","/Icons/supabase.svg", "/Icons/firebase.svg"],
+    link: "jira-project-4mr6.vercel.app",
+    gitLink: 'https://github.com/ElenMuradyan/JiraProject'
+  },
+  {
+    id: 3,
+    title: "E-commerce App",
+    des: "A full-featured e-commerce platform with user-friendly navigation, built using React and modern state management.",
+    img: "/Projects/ecommerce.png",
+    iconLists: ["/Icons/react.svg", "/Icons/typescript.svg", "/Icons/redux.svg", "/Icons/tailwindcss.svg", "/Icons/firebase.svg", "/Icons/supabase.svg"],
+    link: "omega-ecommerce.netlify.app",
+    gitLink: 'https://github.com/ElenMuradyan/OmegaShop'
+  },
+  {
+    id: 4,
+    title: "Crypto Viewer",
+    des: "Real-time cryptocurrency price viewer app with charting and market details, built using React and TypeScript.",
+    img: "/Projects/crypto.png",
+    iconLists: ["/Icons/react.svg", "/Icons/typescript.svg", "/Icons/coinmarketcap.svg", "/Icons/css.svg", "/Icons/antdesign.svg", "/Icons/visx.svg"],
+    link: "currencytypescriptreactapp.netlify.app",
+    gitLink: 'https://github.com/ElenMuradyan/crypto-app'
+  },
+  {
+    id: 5,
+    title: "Personal Waste Tracker",
+    des: "Track your daily waste and environmental impact with this lightweight tracker built in React and TypeScript.",
+    img: "/Projects/waste.png",
+    iconLists: ["/Icons/react.svg", "/Icons/typescript.svg", "/Icons/redux.svg", "/Icons/firebase.svg", "/Icons/antdesign.svg"],
+    link: "mywallettypescript.netlify.app",
+    gitLink: 'https://github.com/ElenMuradyan/spender_ts'
+  },
+  {
+    id: 6,
+    title: "Weather App",
+    des: "Simple and clean weather app that shows real-time weather info based on user location.",
+    img: "/Projects/weather.png",
+    iconLists: ["/Icons/react.svg", "/Icons/javascript.svg", "/Icons/redux.svg", "/Icons/antdesign.svg"],
+    link: "weatherforecasterevan.netlify.app",
+    gitLink: 'https://github.com/ElenMuradyan/Weather-App'
+  },
+  {
+    id: 7,
+    title: "Millionaire Quiz App",
+    des: "Challenge your knowledge and climb the ladder of wealth in this 'Who Wants to Be a Millionaire'-style quiz game built with React, Firebase, and Ant Design.",
+    img: "/Projects/millionaire.png", 
+    iconLists: ["/Icons/react.svg", "/Icons/javascript.svg", "/Icons/redux.svg", "/Icons/firebase.svg", "/Icons/antdesign.svg"],
+    link: "milionairegame.netlify.app",
+    gitLink: 'https://github.com/ElenMuradyan/MillionaireQuiz'
+  }  
+];
   
   export const socialMedia = [
     {

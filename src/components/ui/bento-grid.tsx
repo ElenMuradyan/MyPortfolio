@@ -4,10 +4,10 @@ import { IoCopyOutline } from "react-icons/io5";
 import { cn } from "@/lib/utils";
 import MagicButton from "./MagicButton";
 import { BackgroundGradientAnimation } from "./background-gradient-animation";
-import { Globe } from "./globe";
 import GridGlobe from "./GridGlobe";
 import Lottie from "react-lottie";
 import animationData from '@/data/confetti.json';
+import { BackgroundBeamsWithCollision } from "./background-beams-with-collision";
 
 export const BentoGrid = ({
   className,
@@ -40,15 +40,15 @@ export const BentoGridItem = ({
 }: {
   className?: string;
   id: number;
-  title?: string | React.ReactNode;
+  title?: string;
   description?: string | React.ReactNode;
   img?: string;
   imgClassName?: string;
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["ReactJS", "Next.js", "TypeScript"];
+  const rightLists = ["Firebase", "Redux", "Tailwind CSS"];
   const [copied, setCopied] = useState<boolean>(false);
 
   const handleCopy = () => {
@@ -83,11 +83,15 @@ export const BentoGridItem = ({
           className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"}`}
         >
           {spareImg && (
-            <img
+            id !== 4 ? <img
               src={spareImg}
               alt={spareImg}
               className="object-cover object-center w-full h-full"
-            />
+            /> :  <img
+            src={spareImg}
+            alt={spareImg}
+            className="object-cover left-0 object-center w-[30%] h-[30%]"
+          />
           )}
         </div>
         {id === 6 && (
@@ -102,16 +106,20 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#c1c2d353] z-10">
             {description}
           </div>
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 text-[#c1c2d3d7]`}
           >
-            {title}
+            {id !== 2 && title}
           </div>
 
-          {id === 2 && <GridGlobe />}
+          {id === 2 &&
+          <BackgroundBeamsWithCollision className={className}>
+            {title}
+          </BackgroundBeamsWithCollision>
+          }
 
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
