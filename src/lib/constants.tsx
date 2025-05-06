@@ -153,3 +153,35 @@ export const projects = [
       img: "/link.svg",
     },
   ];
+
+  export const skillGroups = [
+    {
+      category: "Frontend",
+      skills: [
+        { name: "React", icon: "/Icons/react.svg" },
+        { name: "Next.js", icon: "/Icons/nextdotjs.svg" },
+        { name: "TypeScript", icon: "/Icons/typescript.svg" },
+        { name: "JavaScript", icon: "/Icons/javascript.svg" },
+        { name: "HTML", icon: "/Icons/html5.svg" },
+        { name: "CSS", icon: "/Icons/css.svg" },  
+        { name: "Tailwind CSS", icon: "/Icons/tailwindcss.svg" },
+      ],
+    },
+    {
+      category: "Backend",
+      skills: [
+        { name: "Firebase", icon: "/Icons/firebase.svg" },
+        { name: "Supabase", icon: "/Icons/supabase.svg" },
+      ],
+    },
+    {
+      category: "Tools",
+      skills: [
+        { name: "Redux", icon: "/Icons/redux.svg" },
+        { name: "Git", icon: "/Icons/git.svg" },
+        { name: "GitHub", icon: "/Icons/github.svg" },
+        { name: "Ant Design", icon: "/Icons/antdesign.svg" },
+      ],
+    },
+  ];
+  

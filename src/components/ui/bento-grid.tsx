@@ -4,8 +4,6 @@ import { IoCopyOutline } from "react-icons/io5";
 import { cn } from "@/lib/utils";
 import MagicButton from "./MagicButton";
 import { BackgroundGradientAnimation } from "./background-gradient-animation";
-import GridGlobe from "./GridGlobe";
-import Lottie from "react-lottie";
 import animationData from '@/data/confetti.json';
 import { BackgroundBeamsWithCollision } from "./background-beams-with-collision";
 
@@ -151,19 +149,6 @@ export const BentoGridItem = ({
           )}
           {id === 6 && (
             <div className="mt-5 relative">
-              <div
-                className={`absolute -bottom-5 right-0`}
-              >
-                <Lottie options={{
-                  loop: copied,
-                  autoplay: copied,
-                  animationData,
-                  rendererSettings: {
-                    preserveAspectRatio: 'xMidYMid slice'
-                  }
-                }} />
-              </div>
-
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
                 icon={<IoCopyOutline />}
