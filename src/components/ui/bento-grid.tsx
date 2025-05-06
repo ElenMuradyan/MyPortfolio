@@ -4,8 +4,8 @@ import { IoCopyOutline } from "react-icons/io5";
 import { cn } from "@/lib/utils";
 import MagicButton from "./MagicButton";
 import { BackgroundGradientAnimation } from "./background-gradient-animation";
-import animationData from '@/data/confetti.json';
 import { BackgroundBeamsWithCollision } from "./background-beams-with-collision";
+import { TextGenerateEffect } from "./TextGenerateEffect ";
 
 export const BentoGrid = ({
   className,
@@ -67,28 +67,35 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
-      <div className={`${id === 6 && "flex justify-center"} h-full`}>
-        <div className="w-full h-full absolute">
-          {img && (
+      <div className={`${id === 6 && "flex justify-center"} relative h-full`}>
+        <div className="w-full h-full absolute"
+        style={{
+          backgroundImage: id === 1 ? `url(${img})` : undefined,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }}
+        >
+          {img && id !== 1 && (
             <img
               src={img}
               alt={img}
-              className={cn(imgClassName, "object-cover object-center ")}
-            />
+              className={cn(imgClassName, "object-fill object-center w-full h-full")}
+              />
           )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"}`}
+          className={`${id === 1 && 'flex h-[100%] w-[150%] justify-center items-center'} absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"}`}
         >
           {spareImg && (
-            id !== 4 ? <img
+            (id !== 4 && id !== 1) ? <img
               src={spareImg}
               alt={spareImg}
               className="object-cover object-center w-full h-full"
             /> :  <img
             src={spareImg}
             alt={spareImg}
-            className="object-cover left-0 object-center w-[30%] h-[30%]"
+            className={`object-cover left-0 object-center w-[30%] h-[30%]`}
           />
           )}
         </div>
@@ -113,9 +120,12 @@ export const BentoGridItem = ({
             {id !== 2 && title}
           </div>
 
-          {id === 2 &&
+          {id === 2 && title &&
           <BackgroundBeamsWithCollision className={className}>
-            {title}
+            <TextGenerateEffect 
+            words={title}
+            className="text-center mt-8 text-[20px] md:text-1xl lg:text-2xl" 
+            />
           </BackgroundBeamsWithCollision>
           }
 

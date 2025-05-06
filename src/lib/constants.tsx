@@ -14,9 +14,9 @@ export const gridItems = [
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
-    titleClassName: "justify-center",
-    img: "/Images/b1.jpg",
-    spareImg: "",
+    titleClassName: "justify-center items-end",
+    img: "/Images/grid.svg",
+    spareImg: "/Images/laptop1.png",
   },
   {
     id: 2,
@@ -158,30 +158,157 @@ export const projects = [
     {
       category: "Frontend",
       skills: [
-        { name: "React", icon: "/Icons/react.svg" },
-        { name: "Next.js", icon: "/Icons/nextdotjs.svg" },
-        { name: "TypeScript", icon: "/Icons/typescript.svg" },
-        { name: "JavaScript", icon: "/Icons/javascript.svg" },
-        { name: "HTML", icon: "/Icons/html5.svg" },
-        { name: "CSS", icon: "/Icons/css.svg" },  
-        { name: "Tailwind CSS", icon: "/Icons/tailwindcss.svg" },
+        {
+          title: "React",
+          href: '#',
+          icon: (
+            <img
+              src="/Icons/react.svg"
+              alt="React"
+              className="w-full h-full object-contain"
+            />
+          ),
+        },
+        {
+          title: "Next.js",
+          href: '#',
+          icon: (
+            <img
+              src="/Icons/nextdotjs.svg"
+              alt="Next.js"
+              className="w-full h-full object-contain"
+            />
+          ),
+        },
+        {
+          title: "TypeScript",
+          href: '#',
+          icon: (
+            <img
+              src="/Icons/typescript.svg"
+              alt="TypeScript"
+              className="w-full h-full object-contain"
+            />
+          ),
+        },
+        {
+          title: "JavaScript",
+          href: '#',
+          icon: (
+            <img
+              src="/Icons/javascript.svg"
+              alt="JavaScript"
+              className="w-full h-full object-contain"
+            />
+          ),
+        },
+        {
+          title: "HTML",
+          href: '#',
+          icon: (
+            <img
+              src="/Icons/html5.svg"
+              alt="HTML"
+              className="w-full h-full object-contain"
+            />
+          ),
+        },
+        {
+          title: "CSS",
+          href: '#',
+          icon: (
+            <img
+              src="/Icons/css.svg"
+              alt="CSS"
+              className="w-full h-full object-contain"
+            />
+          ),
+        },
+        {
+          title: "Tailwind CSS",
+          href: '#',
+          icon: (
+            <img
+              src="/Icons/tailwindcss.svg"
+              alt="Tailwind CSS"
+              className="w-full h-full object-contain"
+            />
+          ),
+        },
       ],
     },
     {
       category: "Backend",
       skills: [
-        { name: "Firebase", icon: "/Icons/firebase.svg" },
-        { name: "Supabase", icon: "/Icons/supabase.svg" },
-      ],
+        {
+          title: "Firebase",
+          href: '#',
+          icon: (
+            <img
+              src="/Icons/firebase.svg"
+              alt="Firebase"
+              className="w-full h-full object-contain"
+            />
+          ),
+        },
+        {
+          title: "Supabase",
+          href: '#',
+          icon: (
+            <img
+              src="/Icons/supabase.svg"
+              alt="Supabase"
+              className="w-full h-full object-contain"
+            />
+          ),
+        },
+         ],
     },
     {
       category: "Tools",
       skills: [
-        { name: "Redux", icon: "/Icons/redux.svg" },
-        { name: "Git", icon: "/Icons/git.svg" },
-        { name: "GitHub", icon: "/Icons/github.svg" },
-        { name: "Ant Design", icon: "/Icons/antdesign.svg" },
-      ],
-    },
-  ];
-  
+        {
+          title: "Redux",
+          href: '#',
+          icon: (
+            <img
+              src="/Icons/redux.svg"
+              alt="Redux"
+              className="w-full h-full object-contain"
+            />
+          ),
+        },
+        {
+          title: "Git",
+          href: '#',
+          icon: (
+            <img
+              src="/Icons/git.svg"
+              alt="Git"
+              className="w-full h-full object-contain"
+            />
+          ),
+        },
+        {
+          title: "GitHub",
+          href: '#',
+          icon: (
+            <img
+              src="/Icons/github.svg"
+              alt="GitHub"
+              className="w-full h-full object-contain"
+            />
+          ),
+        },
+        {
+          title: "Ant Design",
+          href: '#',
+          icon: (
+            <img
+              src="/Icons/antdesign.svg"
+              alt="Ant Design"
+              className="w-full h-full object-contain"
+            />
+          ),
+        },
+]}]

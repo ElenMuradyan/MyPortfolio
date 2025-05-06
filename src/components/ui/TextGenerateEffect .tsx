@@ -9,12 +9,14 @@ export const TextGenerateEffect = ({
   color = 'white',
   filter = true,
   duration = 0.5,
+  margin = 0
 }: {
   words: string;
   className?: string;
   color?: string;
   filter?: boolean;
   duration?: number;
+  margin?: number;
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
@@ -53,7 +55,7 @@ export const TextGenerateEffect = ({
   };
 
   return (
-    <div className={cn("font-bold", className)}>
+    <div className={cn("font-bold", className)} style={{margin: margin}}>
       <div className="my-4">
         <div className="dark:text-white text-black leading-snug tracking-wide">
           {renderWords()}
