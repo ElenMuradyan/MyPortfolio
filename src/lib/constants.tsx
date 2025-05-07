@@ -79,7 +79,7 @@ export const projects = [
     des: "A smart AI chatbot built with Next.js and OpenAI API, designed to provide interactive responses and integrate with modern web apps.",
     img: "/Projects/chatbot.png",
     iconLists: ["/Icons/nextdotjs.svg", "/Icons/typescript.svg", "/Icons/openai.svg", "/Icons/redux.svg", "/Icons/cookiecutter.svg", "/Icons/supabase.svg", "/Icons/firebase.svg"],
-    link: "z-chatbot.netlify.app",
+    link: "https://z-chatbot.netlify.app",
     gitLink: 'https://github.com/ElenMuradyan/chatBot'
 
   },  
@@ -89,7 +89,7 @@ export const projects = [
     des: "A simplified Jira board clone for task and project management, with drag-and-drop support and Redux integration.",
     img: "/Projects/jira.png",
     iconLists: ["/Icons/nextdotjs.svg", "/Icons/typescript.svg", "/Icons/redux.svg", "/Icons/cookiecutter.svg", "/Icons/antdesign.svg","/Icons/supabase.svg", "/Icons/firebase.svg"],
-    link: "jira-project-4mr6.vercel.app",
+    link: "https://jira-project-4mr6.vercel.app",
     gitLink: 'https://github.com/ElenMuradyan/JiraProject'
   },
   {
@@ -98,7 +98,7 @@ export const projects = [
     des: "A full-featured e-commerce platform with user-friendly navigation, built using React and modern state management.",
     img: "/Projects/ecommerce.png",
     iconLists: ["/Icons/react.svg", "/Icons/typescript.svg", "/Icons/redux.svg", "/Icons/tailwindcss.svg", "/Icons/firebase.svg", "/Icons/supabase.svg"],
-    link: "omega-ecommerce.netlify.app",
+    link: "https://omega-ecommerce.netlify.app",
     gitLink: 'https://github.com/ElenMuradyan/OmegaShop'
   },
   {
@@ -107,7 +107,7 @@ export const projects = [
     des: "Real-time cryptocurrency price viewer app with charting and market details, built using React and TypeScript.",
     img: "/Projects/crypto.png",
     iconLists: ["/Icons/react.svg", "/Icons/typescript.svg", "/Icons/coinmarketcap.svg", "/Icons/css.svg", "/Icons/antdesign.svg", "/Icons/visx.svg"],
-    link: "currencytypescriptreactapp.netlify.app",
+    link: "https://currencytypescriptreactapp.netlify.app",
     gitLink: 'https://github.com/ElenMuradyan/crypto-app'
   },
   {
@@ -116,7 +116,7 @@ export const projects = [
     des: "Track your daily waste and environmental impact with this lightweight tracker built in React and TypeScript.",
     img: "/Projects/waste.png",
     iconLists: ["/Icons/react.svg", "/Icons/typescript.svg", "/Icons/redux.svg", "/Icons/firebase.svg", "/Icons/antdesign.svg"],
-    link: "mywallettypescript.netlify.app",
+    link: "https://mywallettypescript.netlify.app",
     gitLink: 'https://github.com/ElenMuradyan/spender_ts'
   },
   {
@@ -125,7 +125,7 @@ export const projects = [
     des: "Simple and clean weather app that shows real-time weather info based on user location.",
     img: "/Projects/weather.png",
     iconLists: ["/Icons/react.svg", "/Icons/javascript.svg", "/Icons/redux.svg", "/Icons/antdesign.svg"],
-    link: "weatherforecasterevan.netlify.app",
+    link: "https://weatherforecasterevan.netlify.app",
     gitLink: 'https://github.com/ElenMuradyan/Weather-App'
   },
   {
@@ -134,7 +134,7 @@ export const projects = [
     des: "Challenge your knowledge and climb the ladder of wealth in this 'Who Wants to Be a Millionaire'-style quiz game built with React, Firebase, and Ant Design.",
     img: "/Projects/millionaire.png", 
     iconLists: ["/Icons/react.svg", "/Icons/javascript.svg", "/Icons/redux.svg", "/Icons/firebase.svg", "/Icons/antdesign.svg"],
-    link: "milionairegame.netlify.app",
+    link: "https://milionairegame.netlify.app",
     gitLink: 'https://github.com/ElenMuradyan/MillionaireQuiz'
   }  
 ];
@@ -142,15 +142,18 @@ export const projects = [
   export const socialMedia = [
     {
       id: 1,
-      img: "/git.svg",
+      img: "/Icons/github.svg",
+      href: 'https://github.com/ElenMuradyan'
     },
     {
       id: 2,
-      img: "/twit.svg",
+      img: "/Icons/linkedin.svg",
+      href: 'https://linkedin.com/in/elen-muradyan-570a5b342'
     },
     {
       id: 3,
-      img: "/link.svg",
+      img: "/Icons/mail.svg",
+      href: "https://mailto:muradyanelen506@gmail.com"
     },
   ];
 

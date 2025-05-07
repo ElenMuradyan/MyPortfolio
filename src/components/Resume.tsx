@@ -1,3 +1,4 @@
+import { FaIdCard } from "react-icons/fa";
 import { PinContainer } from "./ui/3d-pin";
 import MagicButton from "./ui/MagicButton";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect ";
@@ -10,7 +11,7 @@ export default function Resume () {
                 className="text-center mt-8 text-[20px] md:text-2xl lg:text-3xl"  
                 margin={50}
             />
-            <div className="flex items-center justify-center">
+            <div className="flex flex-col sm:flex-row items-center justify-center">
 
             <PinContainer
              title="Advanced JavaScript Certificate from Armenian Code Academy"
@@ -52,9 +53,12 @@ export default function Resume () {
             </div>
 
             <a href="/Cerceficates/resume.pdf" target="resume">
-            <MagicButton title='SEE MY RESUME'/>
+            <MagicButton 
+            title='SEE MY RESUME'
+            icon={<FaIdCard />}
+            position="right"
+            />
             </a>
-
         </section>
     )
 }

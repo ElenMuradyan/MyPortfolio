@@ -7,7 +7,8 @@ import { FloatingDockDemo } from "./ui/FloatingDocDemo";
 const Skills = () => {
   return (
     <section id='skills' className="py-30 mt-[30px] px-6">
-      <TextGenerateEffect 
+      <TextGenerateEffect
+      margin={50} 
       className="text-center mt-[30px] text-[30px] md:text-2xl lg:text-5xl" 
       words="My Skills and Tools I Use"/>
 

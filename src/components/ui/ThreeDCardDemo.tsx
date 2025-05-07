@@ -3,23 +3,24 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import MagicButton from "./MagicButton";
-import Link from "next/link";
+import { Eye } from "lucide-react";
+import { BsGithub } from "react-icons/bs";
 
 export function ThreeDCardDemo({title, des, img, iconLists, link, gitLink}: {title: string, des: string, img: string, iconLists: string[], link: string, gitLink: string}) {
   return (
     <CardContainer className="inter-var flex flex-wrap gap-50">
       <CardBody 
-      className="bg-gray-50 flex flex-col gap-5 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-[#000319] dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] rounded-xl p-6 border  ">
+      className=" flex flex-col gap-5 relative group/card border-black/[0.1] w-auto sm:w-[30rem] rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
+          className="text-xl w-[100%] text-center font-bold text-white"
         >
           {title}
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-purple-200"
+          className="text-center text-sm max-w-sm mt-2 text-purple-200"
         >
           {des}
         </CardItem>
@@ -55,13 +56,13 @@ export function ThreeDCardDemo({title, des, img, iconLists, link, gitLink}: {tit
             as="div"
             className="flex justify-between w-[100%] items-center mt-20" 
         >
-                <Link href={link}>
-                <MagicButton title='View Demo' />
-                </Link>
+                <a href={link} target={link}>
+                <MagicButton title='View Demo' icon={<Eye/>} position="right"/>
+                </a>
 
-                <Link href={gitLink}>
-                <MagicButton title='View Github'/>
-                </Link>
+                <a href={gitLink} target={gitLink}>
+                <MagicButton title='View Github'icon={<BsGithub/>} position="right" />
+                </a>
         </CardItem>
       </CardBody>
     </CardContainer>
