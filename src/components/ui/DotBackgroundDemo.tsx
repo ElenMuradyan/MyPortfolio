@@ -29,7 +29,7 @@ export function DotBackgroundDemo() {
             I’m passionate about building clean, responsive web apps using React, TypeScript, and modern tools like Next.js, Firebase, and Tailwind CSS.
             </p>
             <div className="flex w-[100%] gap-5 justify-center items-center">
-            <a href="/about">
+            <a href="/projects">
             <MagicButton 
             title="Show my work"
             icon={<FaLocationArrow />}
